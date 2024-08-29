@@ -1,0 +1,95 @@
+/* サイト全体のフォント指定 */
+html { font-size: 62.5%; }
+
+body {
+ font-family: "游明朝" ;
+ font-size: 1.4rem;
+}
+
+.concept {
+    text-align: center;
+}
+
+.mainward {
+    font-size: 2.3rem;
+    color: #00488e;
+    line-height: 0.3em;
+}
+
+.subward {
+    color: #00488e
+}
+
+.ward {
+    color: #8f8d93;
+    
+}
+
+.back {
+    background: #ffffff;
+    padding: 0px 0px 0px 40px;
+    }
+
+
+/* space */
+.spaceward {
+    margin-left: 70%;
+    font-size: 5.0rem;
+    color: #e5e5e5;
+    line-height: 1.0em;
+}
+
+.s_mainward {
+    margin-left: 70%;
+    font-size: 2.0rem;
+    color: #00488e;
+    line-height: 2.5em
+}
+
+.s_ward {
+    margin-left: 70%;
+    color: #8f8d93;
+    line-height: 2.3em
+}
+
+/* food */
+.foodward {
+    margin-left: 5%;
+    font-size: 5.0rem;
+    color: #e5e5e5;
+    line-height: 1.0em
+}
+
+.f_mainward {
+    margin-left: 5%;
+    font-size: 2.0rem;
+    color: #00488e;
+    line-height: 2.5em
+}
+
+.f_ward {
+    margin-left: 5%;
+    color: #8f8d93;
+    line-height: 2.3em
+}
+
+/* drink */
+.drinkward {
+    margin-left: 67%;
+    font-size: 5.0rem;
+    color: #e5e5e5;
+    line-height: 1.0em
+}
+
+.d_mainward {
+    margin-left: 67%;
+    font-size: 2.0rem;
+    color: #00488e;
+    line-height: 2.5em
+}
+
+.d_ward {
+    margin-left: 67%;
+    color: #8f8d93;
+    line-height: 2.3em
+}
