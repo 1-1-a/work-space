@@ -307,3 +307,92 @@ body {
 }
 .resizeimage img { width: 100%; }
 
+/*ここから*/
+.item {
+    flex: 1 1 calc(50% - 20px); /* デフォルトでは2列にするための幅設定 */
+    position: relative;
+    padding-bottom: 10px; /* 下線とテキスト間のスペース */
+    
+}
+
+/* スマホサイズで1列にするためのメディアクエリ */
+@media (max-width: 800px) {
+    .item {
+        flex: 1 1 100%; /* 1列にするための幅設定 */
+    }
+}
+
+.item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-bottom: 2px solid #ddd; /* 薄い線のスタイル */
+}
+
+div.parent_box {
+    display: flex;
+    align-items: center;
+}
+
+.mainwardw {
+    position: relative;
+    font-size: 2.3rem;
+    color: white;
+    align-items: center;
+}
+.subward {
+    color: white
+}
+.p-fv {
+    width: 100%;
+    height: 800px;
+    background-image: url(.vscode/img/images.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* 追加: 縦方向の配置をサポート */
+    align-items: center; /* 中央揃え（水平） */
+    justify-content: center; /* 中央揃え（垂直） */
+    padding-left: 28px;
+    padding-right: 28px;
+    color: white; /* 文字色を白に設定 */
+    text-align: center; /* テキストを中央揃え */
+}
+
+.p-fv::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* 背景の上にコンテンツを配置 */
+}
+
+.p-fv > * {
+    position: relative;
+    z-index: 2; /* 背景画像の上にテキストを配置 */
+}
+.image-section {
+    width: 200px;
+    height: 150px;
+}
+.b_ward {
+    color: #8f8d93;
+    line-height: 2.3em
+    
+}
+
+.footer{
+    text-align: center;
+    color: #00488e;
+}
+.button{
+    text-align: center;
+}
+  
