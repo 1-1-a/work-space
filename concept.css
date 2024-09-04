@@ -76,14 +76,14 @@ body {
     color: #8f8d93;
 }
 
-<<<<<<< HEAD
+
 .back {
     background: #ffffff;
     padding-left: 40px;
 }
 
 /* SPACEセクションのスタイル */
-=======
+
 
 /*位置調整*/
 .spaceward {
@@ -163,7 +163,7 @@ body {
   }
 
 /* space */
->>>>>>> d3291d340545e606ba101849809d4446d59dbb1a
+
 .spaceward {
     margin-left: 87rem;
     margin-bottom: -3.6rem;
@@ -191,11 +191,11 @@ body {
     margin-bottom: -3.6rem;
     font-size: 5.0rem;
     color: #e5e5e5;
-<<<<<<< HEAD
+
     line-height: 1.0em;
-=======
+
     line-height: 0rem
->>>>>>> d3291d340545e606ba101849809d4446d59dbb1a
+
 }
 
 .f_mainward {
@@ -217,11 +217,11 @@ body {
     margin-bottom: -3.6rem;
     font-size: 5.0rem;
     color: #e5e5e5;
-<<<<<<< HEAD
+
     line-height: 1.0em;
-=======
+
     line-height: 0rem
->>>>>>> d3291d340545e606ba101849809d4446d59dbb1a
+
 }
 
 .d_mainward {
@@ -237,7 +237,7 @@ body {
     line-height: 2.3em;
 }
 
-<<<<<<< HEAD
+
 /* メインビジュアルテキストのスタイル */
 .mv_ward h1 {
     margin-top: 80px;
@@ -274,7 +274,7 @@ body {
     opacity: 1;
 }
 
-=======
+
 /* 画像　*/
 .img-s {
     position: absolute;
@@ -306,4 +306,4 @@ body {
     z-index: -1;
 }
 .resizeimage img { width: 100%; }
->>>>>>> d3291d340545e606ba101849809d4446d59dbb1a
+
