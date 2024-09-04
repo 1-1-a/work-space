@@ -308,6 +308,13 @@ body {
 .resizeimage img { width: 100%; }
 
 /*ここから*/
+.b_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* アイテム間のスペース */
+    padding: 10px;
+    
+}
 .item {
     flex: 1 1 calc(50% - 20px); /* デフォルトでは2列にするための幅設定 */
     position: relative;
