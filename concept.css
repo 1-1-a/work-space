@@ -12,21 +12,39 @@ body {
 /* ヘッダーのスタイル */
 .header {
     height: 100px; /* ヘッダーの高さを設定 */
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #e5e5e5;
     padding: 20px 40px; /* 上下左右に適切なパディングを追加 */
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #fff; /* 必要に応じて背景色を調整 */
+
+    position: relative;
+    z-index: 10;
+    
+}
+.logo {
+    flex-grow: 0; /* ロゴの幅を自動成長させない */
+}
+
+.logo img {
+    width: 200px; /* ロゴの幅を200pxに変更 */
+    max-width: 100%;
+    flex: none;
+    height: auto; /* 高さを自動調整 */
 }
 
 .header .container {
-    max-width: 1200px; /* 必要に応じて最大幅を設定 */
-    width: 100%;
-    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between; /* ロゴを左、ナビゲーションを右に分ける */
+    align-items: center; /* コンテンツを上下中央に揃える */
+    width: 100%; /* コンテナを全幅に */
+    padding: 0 40px; /* 左右に余白を追加 */
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end; /* ナビゲーションメニューを右寄せに */
 }
 
 .nav-list {
@@ -35,7 +53,7 @@ body {
     gap: 20px;
     margin: 0;
     padding: 0;
-    justify-content: flex-end;
+   
 }
 
 .nav-item a {
@@ -236,23 +254,35 @@ body {
     color: #8f8d93;
     line-height: 2.3em;
 }
-
+.mv_ward {
+    position: relative;
+    width: 100%; /* 親要素に十分な幅を持たせる */
+    padding-left: 0; /* 左側に余白があればリセット */
+    margin-bottom: 30px;
+}
 
 /* メインビジュアルテキストのスタイル */
 .mv_ward h1 {
-    margin-top: 80px;
-    font-size: 64px;
-    margin: 0 0 32px 0;
-    width: 75%;
-    max-width: 75%;
+    font-size: 80px;
+    line-height: 1.2;
     color: #00488e;
+    display: block;
+    padding: 0;
+    height: 150px;
+    text-align: left;
+    position: relative;
+    left: -20px; /* 左に20px移動 */
+    margin: 0; /* マージンをリセット */
 }
+
+
 
 /* スライドショーのスタイル */
 .slideshow-container {
     max-width: 60%;
     position: relative;
     margin: 0 auto 50px;
+    margin-top: 20px; 
 }
 
 .slide img {
@@ -402,4 +432,96 @@ div.parent_box {
 .button{
     text-align: center;
 }
+  /* アイコン */
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 10px;
+    gap: 15px;
+
+    margin-bottom: 20px; 
+}
+
+
+.social-icons a:hover {
+    color: #007bff;
+    transform: scale(1.2);
+
+    
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* すべて右揃えに */
+    text-align: right;
+    padding-top: 100px; /* 上に余白を追加 */
+}
+.address{
+    margin-bottom: 5px;
+    line-height: 1.4em;
+    color: #aaaaaa;
+    white-space: nowrap; /* 強制的に1行にする */
+    word-break: break-word; /* 余白が足りない場合は単語で改行 */
+
+}
+
+.tel{
+  
+    margin-bottom: 5px; /* 電話番号とSNSアイコンの間に余白 */
+    color: #aaaaaa; /* 色を指定 */
+}
+
+.social-icons{
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    color: #00488e; /* SNSアイコンの色を指定 */
+ 
+}
+
+.sd_icons{
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: visible;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+
+.fab fa-brands fa-x-twitter{
+    color: #00488e;
+    font-size: 18px;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: visible;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.fab fab fa-facebook-f{
+    color: #00488e;
+    font-size: 18px;
+
+}
+.fab fa-instagram{
+    color: #00488e;
+    font-size: 18px;
+
+}
+
+
+.fab fa-youtube{
+    color: #00488e;
+    font-size: 18px;
+
+}
+
   
