@@ -524,4 +524,10 @@ div.parent_box {
 
 }
 
-  
+.f_social-icons{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    color: #00488e; /* SNSアイコンの色を指定 */
+ 
+} 
