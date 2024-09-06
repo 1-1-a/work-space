@@ -271,8 +271,9 @@ body {
     height: 150px;
     text-align: left;
     position: relative;
-    left: -20px; /* 左に20px移動 */
+  
     margin: 0; /* マージンをリセット */
+
 }
 
 
