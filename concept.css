@@ -429,6 +429,10 @@ div.parent_box {
     text-align: center;
     color: #00488e;
 }
+.button-container {
+    display: flex;
+    justify-content: center; /* 横方向に中央揃え */
+}
 .button {
     background-color: transparent;
     border: 2px solid #00488e; /* 青い枠 */
@@ -445,6 +449,30 @@ div.parent_box {
 .button:hover {
     background-color: #00488e;
     color: white;
+}
+.s_button {
+    background-color: transparent;
+    border: 1px solid white; /* 枠の色 */
+    color: white;            /* 文字の色 */
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;     /* 完全な円にするため */
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-flex;   /* 内部要素を中央に配置 */
+    align-items: center;    /* 縦方向に中央揃え */
+    justify-content: center;/* 横方向に中央揃え */
+    width: 16px;            /* 高さと幅をフォントサイズと一致させる */
+    height: 16px;
+    font-size: 13px;        /* フォントサイズ */
+    line-height: 16px;      /* 行の高さもボタンの高さと一致させる */
+    padding: 0;             /* パディングをリセット */
+    box-sizing: border-box; /* 枠線を含めてサイズを計算 */
+}
+
+.s_button:hover {
+    background-color: white;
+    color: black;
 }
   /* アイコン */
 .social-icons {
