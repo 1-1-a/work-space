@@ -474,6 +474,11 @@ div.parent_box {
     background-color: white;
     color: black;
 }
+.f_navbar {
+    display: flex;
+    justify-content: center;
+}
+
   /* アイコン */
 .social-icons {
     display: flex;
