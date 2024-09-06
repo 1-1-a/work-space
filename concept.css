@@ -429,8 +429,22 @@ div.parent_box {
     text-align: center;
     color: #00488e;
 }
-.button{
-    text-align: center;
+.button {
+    background-color: transparent;
+    border: 2px solid #00488e; /* 青い枠 */
+    color: #00488e;            /* 青い文字 */
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;    /* 角を丸くする場合 */
+    transition: background-color 0.3s, color 0.3s;
+    margin: 20px 0;        /* 上下にスペースを追加 */
+}
+.button:hover {
+    background-color: #00488e;
+    color: white;
 }
   /* アイコン */
 .social-icons {
