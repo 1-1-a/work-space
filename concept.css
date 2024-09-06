@@ -432,19 +432,34 @@ div.parent_box {
 .button-container {
     display: flex;
     justify-content: center; /* 横方向に中央揃え */
+    background-color: transparent;
+    border: 1px  #00488e; /* 青い枠 */
+    color: #00488e;            /* 青い文字 */
+    font-size: 16px;
+    padding: 5px 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 20px 0;  
 }
 .button {
     background-color: transparent;
-    border: 2px solid #00488e; /* 青い枠 */
+    border: 1px solid #00488e; /* 青い枠 */
     color: #00488e;            /* 青い文字 */
-    font-size: 16px;
-    font-weight: bold;
-    padding: 10px 20px;
     text-decoration: none;
+    text-align: center;
     cursor: pointer;
-    border-radius: 5px;    /* 角を丸くする場合 */
+    border-radius: 50%;     /* 完全な円にするため */
     transition: background-color 0.3s, color 0.3s;
-    margin: 20px 0;        /* 上下にスペースを追加 */
+    display: inline-flex;   /* 内部要素を中央に配置 */
+    align-items: center;    /* 縦方向に中央揃え */
+    justify-content: center;/* 横方向に中央揃え */
+    width: 16px;            /* 高さと幅をフォントサイズと一致させる */
+    height: 16px;
+    font-size: 13px;        /* フォントサイズ */
+    line-height: 16px;      /* 行の高さもボタンの高さと一致させる */
+    padding: 0;             /* パディングをリセット */
+    box-sizing: border-box; /* 枠線を含めてサイズを計算 */
 }
 .button:hover {
     background-color: #00488e;
